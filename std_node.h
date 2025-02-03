@@ -14,4 +14,12 @@ struct node
     struct node *next;
 };
 
+struct std_node
+{
+    int id;
+    char name[30];
+    struct std_node *next;
+};
+typedef struct std_node *nodePtr;
+
 #endif /* node_h */

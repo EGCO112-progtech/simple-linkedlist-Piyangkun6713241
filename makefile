@@ -1,8 +1,8 @@
 compile: main.c 
-	 gcc main.c -o ming
+	 gcc main.c -o Tonkwan
 
-run: ming
-	 ./ming
+run: Tonkwan
+	 ./Tonkwan
 
-clean: ming
-	 rm ming
+clean: Tonkwan
+	 rm Tonkwan
