@@ -106,10 +106,12 @@ int main(int argc, const char * argv[]) {
 
     Tmp->id=atoi(argv[i]);
     strcpy(Tmp->name,argv[i+1]);
-    }
-
     Tmp->next=NULL;
     Tmp=HEAD;
+    }
+
+    //Tmp->next=NULL;
+    //Tmp=HEAD;
 
     while(Tmp!=NULL){
     printf("%d ",Tmp->id);
