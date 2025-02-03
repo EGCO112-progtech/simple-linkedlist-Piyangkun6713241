@@ -108,16 +108,20 @@ int main(int argc, const char * argv[]) {
     strcpy(Tmp->name,argv[i+1]);
     }
 
-    for(i=1;i<argc;i+=2){
-    printf("%d\n",Tmp->id);
+    Tmp->next=NULL;
+    Tmp=HEAD;
+
+    while(Tmp!=NULL){
+    printf("%d ",Tmp->id);
     printf("%s\n",Tmp->name);
     Tmp=Tmp->next;
     }
+
     for(i=1;i<argc;i++){
       HEAD=HEAD->next;
       free(Tmp);
       Tmp=HEAD;
-
+    
     return 0;
 }
 }
